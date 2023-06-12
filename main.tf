@@ -114,6 +114,10 @@ resource "aws_lambda_function" "this" {
 
   tags = var.tags
 
+  lifecycle {
+    var.lifecycle_changes
+  }
+  
   depends_on = [
     null_resource.archive,
     aws_s3_object.lambda_package,
