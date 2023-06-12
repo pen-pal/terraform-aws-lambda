@@ -852,6 +852,7 @@ No modules.
 | <a name="input_use_existing_cloudwatch_log_group"></a> [use\_existing\_cloudwatch\_log\_group](#input\_use\_existing\_cloudwatch\_log\_group) | Whether to use an existing CloudWatch log group or create new | `bool` | `false` | no |
 | <a name="input_vpc_security_group_ids"></a> [vpc\_security\_group\_ids](#input\_vpc\_security\_group\_ids) | List of security group ids when Lambda Function should run in the VPC. | `list(string)` | `null` | no |
 | <a name="input_vpc_subnet_ids"></a> [vpc\_subnet\_ids](#input\_vpc\_subnet\_ids) | List of subnet ids when Lambda Function should run in the VPC. Usually private or intra subnets. | `list(string)` | `null` | no |
+| <a name="lambda_lifecycle"></a> [lambda\_lifecycle](#input\_lambda\_lifecycle) | (Optional) Lifecycle arguments help control the flow of your Terraform operations by creating custom rules for resource creation and destruction. The arguments available within a lifecycle block are create_before_destroy, prevent_destroy, ignore_changes, and replace_triggered_by. Refer to [https://developer.hashicorp.com/terraform/language/meta-arguments/lifecycle] for further information. | `string` | `null` | no |
 
 ## Outputs
 

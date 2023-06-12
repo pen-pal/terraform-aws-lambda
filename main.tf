@@ -115,7 +115,7 @@ resource "aws_lambda_function" "this" {
   tags = var.tags
 
   lifecycle {
-    var.lifecycle_changes
+    var.lambda_lifecycle
   }
   
   depends_on = [

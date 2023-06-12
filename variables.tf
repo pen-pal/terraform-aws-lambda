@@ -241,6 +241,12 @@ variable "replacement_security_group_ids" {
   default     = null
 }
 
+variable "lambda_lifecycle" {
+  description = "(Optional) Lifecycle arguments help control the flow of your Terraform operations by creating custom rules for resource creation and destruction. The arguments available within a lifecycle block are create_before_destroy, prevent_destroy, ignore_changes, and replace_triggered_by. Refer to [https://developer.hashicorp.com/terraform/language/meta-arguments/lifecycle] for further information"
+  default = null
+  type = string
+}
+
 ###############
 # Function URL
 ###############
